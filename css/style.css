@@ -5,18 +5,20 @@
 #bloc_page { /* Gestion de la page entière */
     width: 900px; 
     margin: auto;
+    display: flex;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
 }
 
 /* LEFT BLOC
 ------------*/
 
 #left_block { /* Bloc de gauche, gris foncé */
-    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 30%;
-    height: 100%;
-    font-family: Helvetica, sans-serif;
+    height: auto;
+    font-family: Montserrat, sans-serif;
     background-color: #212121;
 }
 
@@ -28,70 +30,107 @@
 }
 .ma_photo { /* Image CV enclavé dans un cercle */
     background-size : contain;
-    background-position : 150%; 
+    background-position : 200%; 
     display : inline-block;
     width : 140px; height : 140px;
     border: 3px solid #ff6f00;
     border-radius: 100%;
+    
 }
 
 .bloc_categorie { /* Police, texte, couleur, background des couleurs des catégories */
     background-color: #ff6f00;
     text-transform: uppercase;
     text-align: center;
-    font-family: Helvetica, sans-serif;
+    font-family: Montserrat, sans-serif;
     color: #f7f7f7; 
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
 #contact { /* Police, texte, couleur, espacement */
-    color: #f7f7f7;
-    list-style-type: none;
     display: flex;
-    font-size: small;
+    color: #f7f7f7;
+    font-size: 12px;
     padding-right: 15%;
+}
+
+.contact_intitule {
+    font-weight: bolder;
+    flex-direction: column;
+}
+
+.email, .monsite {
+    color: #f7f7f7;
+    text-decoration: none;
+
+}
+
+.infobulle {
+    position: relative;  /* les .infobulle deviennent référents */
+    cursor: help;
+}
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+  content: attr(aria-label);  /* on affiche aria-label */
+  position: absolute;
+  top: 2.4em;
+  left: 50%;
+  transform: translateX(-50%); /* on centre horizontalement  */
+  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+  white-space: nowrap;  /* on interdit le retour à la ligne */
 }
 
 #description { /* police, fer, couleur */
     color: #f7f7f7;
     text-align: justify;
-    font-size: small;
+    font-size: 12.5px;
     padding-left: 15%;
     padding-right: 15%;
     padding-bottom: 70%;
 }
 
-#icons_global { /* alignement et positionnement */
+#icons_reseaux { /* alignement et positionnement */
+    display: flex;
+    font-size: small;
+}
+
+#icons_loisirs { /* alignement et positionnement */
+    display: flex;
+    font-size: small;
+    padding-left: 12.5%;
+}
+
+li { /* liste */
     display: flex;
     list-style-type: none;
-    font-size: smaller;
-    color: #f7f7f7;
-    padding-bottom: 10%;
 }
 
 /* RIGHT BLOCK
 --------------*/
 
 #right_block { /* Bloc de droite, gris clair */
-    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 70%;
-    height: 100%;
-    font-family: Helvetica, sans-serif;
+    height: auto;
+    font-family: Montserrat, sans-serif;
     background-color: #f7f7f7;
 }
 
 #titre_du_cv { /* Positionnement titre */
     display: flex;
+    margin-left: 10%;
 }
 
 h1 { /* Font */
-    font-family: Helvetica, sans-serif;
+    font-family: Montserrat, sans-serif;
     color: #404040;
     text-transform: uppercase;
     font-size: 2.5em;
+    margin-bottom: 0;
+    margin-top: 15%;
 }
 
 #prenom { /* Color prénom */
@@ -100,7 +139,68 @@ h1 { /* Font */
 }
 
 #sous_titre { /* Taille, positionnement */
-    font-size: 1.5em;
-    border-bottom: 2px solid #ff6f00;
+    font-size: auto;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-family: Montserrat, sans-serif;
+    color: #404040;
     
+}
+
+#line_titre { /* Ligne graphique sous Développeuse */
+   border-bottom: 2px solid #ff6f00; 
+   padding-bottom: 6px;
+}
+
+.titre_cat {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 8%;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff6f00;
+}
+
+i { /* icons */
+    font-size: 150%;
+    color: #ff6f00;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+#information_ft_cat, #information_expro_cat, #information_reco_cat {
+    margin-left: 3%;
+    margin-right: 8%;
+}
+
+.information_rbloc {
+    margin: 0;
+    margin-left: 7%;
+}
+
+.date {
+    font-size: 12px;
+    
+}
+
+.fa-circle, .fa-dot-circle {
+    font-size: 85%;
+}
+
+.resume { /* Alignement et taille du texte */
+    font-size: 10px;
+    text-align: justify;
+}
+
+.nom_forma, .poste { /* Alignement, taille, marge du poste */
+    font-size: 15px;
+
+}
+
+.organisme {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#parenthese {
+    text-transform: none;
 }

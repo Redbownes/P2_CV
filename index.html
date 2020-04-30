@@ -2,7 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8"  />
-        <link rel="stylesheet" href="css/style.css" />
+        <link  href="css/style.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet"> 
+        <link href="asset/icons/fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet"/>
         <title>CV 2020 Pauline LE CORRE</title>
     </head>
 
@@ -12,68 +14,70 @@
             <div id="photo_cv">
                 <img src="asset/img/photo_cv.jpg" alt="Photo du CV" class="ma_photo"/>
             </div>
-            <div>
-                <h3 class="bloc_categorie">contact</h3>
-                    <div id="contact">
-                        <ul>
-                            <li><strong>Adresse :</strong>
-                                <br>163 Avenues des Pins, 
-                                <br>40160 PARENTIS EN BORN</li>
-                                <br>    
-                            <li><strong>Téléphone :</strong>
-                                <br>+33 643 385 934</li>
-                                <br>
-                            <li><strong>E-mail :</strong>
-                                <br>ple.lcre@gmail.com</li>
-                                <br>
-                            <li><strong>Site Web :</strong>
-                                <br>https://redbownes.github.io/P2_CV/</li>
-                                <br>
-                            <li><strong>Réseaux Sociaux :</strong>
-                                <br><img src="asset/icons/" alt="Instagram">
-                                <img src="asset/icons/" alt="Facebook">
-                                <img src="asset/icons/" alt="LinkedIn">
-                                <img src="asset/icons/" alt="Artstation">
-                                <img src="asset/icons/" alt="Behance">
-                                <br>
-                            </li>
-                        </ul>
-                    </div>
-                <h3 class="bloc_categorie">à propos de moi</h3>
-                    <div id="description"> 
-                        <p>Après une licence <strong>Concepteur & Réalisateur 3D</strong>  obtenu en décembre 2019 et étant depuis quelques années <strong>graphiste</strong>, je me tourne à présent vers les métiers du <strong>développement web</strong> afin d’étendre mes compétences et permettre de proposer à ma clientèle un plus large éventail de proposition. </p>
-                    </div>  
-                <h3 class="bloc_categorie">centres d'intérêts</h3>
-                    <div id="icons_global">
-                        <ul>
-                            <li><img src="asset/icons/" alt="Dessiner" id="icon1"></li>
-                            <li><img src="asset/icons/" alt="Ecrire" id="icon2"></li>
-                            <li><img src="asset/icons/" alt="Jeux Vidéo" id="icon3"></li>
-                        </ul>
-                    </div>
-            </div>
+            <h3 class="bloc_categorie">contact</h3>
+                <div id="contact">
+                    <ul>
+                        <li><strong>Adresse :</strong>
+                        <li>163 Avenues des Pins, 
+                        <br>40160 PARENTIS EN BORN</li>
+                        <br>        
+                        <li><strong>Téléphone :</strong></li>
+                        <li><br>+33 643 385 934</li>
+                        <br>
+                        <li><strong>E-mail :</strong></li>
+                        <li><br><a href="ple.lcre@gmail.com" class="email">ple.lcre@gmail.com</a></li>
+                        <br>
+                        <li><strong>Site Web :</strong></li>
+                        <li><br><a href="https://redbownes.github.io/P2_CV/" class="monsite">Mon site</a></li>
+                        <br>
+                        <li><strong>Réseaux Sociaux :</strong></li>
+                            <div id="icons_reseaux">
+                                <p><a href="https://www.facebook.com/pauline.lecorre3"><i class="fab fa-facebook-f"></i></a></p>
+                                <p><a href="https://www.instagram.com/redbownes/"><i class="fab fa-instagram"></i></a></p>
+                                <p><a href="https://twitter.com/Redbbownes"><i class="fab fa-twitter"></i></a></p>
+                                <p><a href="https://www.artstation.com/redbones"><i class="fab fa-artstation"></i></a></p>
+                                <p><a href="https://www.linkedin.com/in/pauline-le-corre-7873b7136/"><i class="fab fa-linkedin-in"></i></a></p>
+                                <p><span class="infobulle" aria-label="Redbones#5366"><i class="fab fa-discord"></i></span></p>
+                            </div> 
+                    </ul>
+                </div>    
+            <h3 class="bloc_categorie">à propos de moi</h3>
+                <div id="description"> 
+                        <p>Après une licence <strong class="descrip">Concepteur & Réalisateur 3D</strong>  obtenu en décembre 2019 et étant depuis quelques années <strong class="descrip">graphiste</strong>, je me tourne à présent vers les métiers du <strong class="descrip">développement web</strong> afin d’étendre mes compétences et permettre de proposer à ma clientèle un plus large éventail de proposition. </p>
+                </div>  
+            <h3 class="bloc_categorie">centres d'intérêts</h3>
+                <div id="icons_loisirs">
+                    <p><i class="fas fa-cubes"></i></p>
+                    <p><i class="fas fa-gamepad"></i></p>
+                    <p><i class="fas fa-camera"></i></p>
+                    <p><i class="fas fa-feather-alt"></i></p>
+                    <p><i class="fas fa-palette"></i></p>
+                    <p><i class="fas fa-plane"></i></p>
+                </div>
         </section>
         <section id="right_block">
             <div id="titre_du_cv">
                 <header>
                         <h1><span id="prenom">Pauline</span> Le Corre</h1>
-                        <h2 id="sous_titre">Développeuse front-end</h2>
+                        <h2 id="sous_titre"><span id="line_titre">Dévelo</span>ppeuse front-end</h2>
                 </header>   
             </div>
             <div id="ft_cat">
-                <img src="asset/icons/" alt="Icons catégorie formation" class="icons_forma">
-                <h3 class="formation">Formation</h3>
+                <div class="titre_cat">
+                    <p><i class="fas fa-graduation-cap"></i></p>
+                    <h3 class="formation">Formation</h3>
+                </div>
                 <div id="information_ft_cat">
                     <table>
                         <tr>
                             <td>
-                                <ul>
-                                    <li class="periode">Mars - Septembre 2020</li>
+                                <ul class="date">
+                                    <li class="periode"><i class="far fa-dot-circle"></i>Mars - Septembre 2020</li>
                                     <li class="lieu">Bordeaux (Distant)</li>
                                 </ul> 
                             </td>
                             <td>
-                                <ul>
+                                <ul class="information_rbloc">
                                     <li class="organisme"><h4>Openclassrooms</h4></li>
                                     <li class="nom_forma"><h5>Junior Web Developer</h5></li>
                                     <li class="resume">Formation de six mois pour appréhender et obtenir les bases du métier de développeur web à travers divers projets sur une période de 6 mois.</li>
@@ -82,14 +86,14 @@
                         </tr>
                         <tr>
                             <td>
-                                <ul>
-                                    <li class="periode">2016 - 2020</li>
+                                <ul class="date">
+                                    <li class="periode"><i class="fas fa-circle"></i>2016 - 2020</li>
                                     <li class="lieu">Bordeaux</li>
                                 </ul> 
                             </td>
                             <td>
-                                <ul>
-                                    <li class="organisme"><h4>ESMI (école Supérieure des Métiers de l’Image)</h4></li>
+                                <ul class="information_rbloc">
+                                    <li class="organisme"><h4>ESMI (é<span id="parenthese">cole Supérieure des Métiers de l’Image</span>)</h4></li>
                                     <li class="nom_forma"><h5>Concepteur & Réalisateur 3D</h5></li>
                                     <li class="resume">Formation de trois ans aux métiers de l’image, spécialisation Concepteur & Réalisateur 3D afin de rejoindre des projets dans le domaine du jeux vidéo, du cinéma et de l’animation.</li>
                                 </ul>
@@ -99,36 +103,37 @@
                 </div>
             </div>
             <div id="sd_cat">
-                <img src="asset/icons/" alt="Icons catégorie expérience professionnelle" class="icons_expro">
-                <h3 class="formation">Expérience Professionnelle</h3>
+                <div class="titre_cat">
+                    <p><i class="fas fa-briefcase"></i></p>
+                    <h3 class="formation">Expérience Professionnelle</h3></div>
                 <div id="information_expro_cat">
                     <table>
                         <tr>
                             <td>
-                                <ul>
-                                    <li class="periode">2016 - 2020</li>
+                                <ul class="date">
+                                    <li class="periode"><i class="far fa-dot-circle"></i>2016 - 2020</li>
                                     <li class="lieu">Bordeaux (et région)</li>
                                 </ul> 
                             </td>
                             <td>
-                                <ul>
+                                <ul class="information_rbloc">
                                     <li class="organisme"><h4>Freelance</h4></li>
-                                    <li class="nom_forma"><h5>Graphic Designer</h5></li>
+                                    <li class="poste"><h5>Graphic Designer</h5></li>
                                     <li class="resume">Réalisation de support de communication visuelle, d’illustration et d’élément de mise en scène ; Conseil graphique & marketing ; Gestion de projet entre les différents corps de métier.</li>
                                 </ul>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <ul>
-                                    <li class="periode">Octobre - Novembre 2019</li>
+                                <ul class="date">
+                                    <li class="periode"><i class="fas fa-circle"></i>Octobre - Novembre 2019</li>
                                     <li class="lieu">Rennes</li>
                                 </ul> 
                             </td>
                             <td>
-                                <ul>
+                                <ul class="information_rbloc">
                                     <li class="organisme"><h4>Sentry Games</h4></li>
-                                    <li class="nom_forma"><h5>Concept, Modeler & Texturer Artist</h5></li>
+                                    <li class="poste"><h5>Concept, Modeler & Texturer Artist</h5></li>
                                     <li class="resume">Stage de fin de cursus dans un studio indépendant de jeux vidéo sur la métropole Rennaise. Création d’élément en 3D et mise en valeur avant leur intégration dans un moteur de jeu.</li>
                                 </ul>
                             </td>
@@ -137,8 +142,10 @@
                 </div>
             </div>
             <div id="td_cat">
-                <img src="asset/icons/" alt="Icons catégorie recommandations" class="icons_reco">
-                <h3 class="formation">Recommandations</h3>
+                <div class="titre_cat">
+                    <p><i class="fas fa-pen"></i></p>
+                    <h3 class="formation">Recommandations</h3>
+                </div>
                 <div id="information_reco_cat">
                     <table>
                         <tr>
