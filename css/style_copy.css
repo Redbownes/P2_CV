@@ -1,0 +1,263 @@
+#bloc_page { /* Gestion de la page entière */
+    width: 900px; 
+    margin: auto;
+    display: flex;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+}
+
+/* LEFT BLOC
+------------*/
+
+#left_block { /* Bloc de gauche, gris foncé */
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    background-color: #212121;
+    color: #f7f7f7;
+}
+
+.bloc_categorie { /* Police, texte, couleur, background des couleurs des catégories */
+    background-color: #ff6f00;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #f7f7f7; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+figure{
+    text-align:center;
+    margin:30px 0px 30px 0px;
+}
+.ma_photo {
+    border: 3px solid #ff6f00;
+    border-radius: 50%;
+    max-width: 170px;
+}
+
+li { /* liste */
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.fas {
+    font-size: 125%;
+}
+
+.fab {
+    font-size: 150%;
+    color: #f7f7f7;
+}
+
+#icons_loisirs { /* alignement et positionnement */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#contact { /* Police, texte, couleur, espacement */
+    display: flex;
+    flex-direction: column;
+    color: #f7f7f7;
+    font-size: 12px;
+    margin-left: 12%;
+    margin-top: 10%;
+    padding: 0;
+
+}
+
+.contact_infos {
+    margin-top: 2px;
+}
+
+.contact_intitule {
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.email, .monsite {
+    color: #f7f7f7;
+    text-decoration: none;
+
+}
+
+.infobulle {
+    position: relative;  /* les .infobulle deviennent référents */
+    cursor: help;
+}
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+    content: attr(aria-label);  /* on affiche aria-label */
+    position: absolute;
+    top: 2.4em;
+    left: 50%;
+    transform: translateX(-50%); /* on centre horizontalement  */
+    z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+    white-space: nowrap;  /* on interdit le retour à la ligne */
+}
+
+#description { /* police, fer, couleur */
+    color: #f7f7f7;
+    text-align: justify;
+    font-size: 12.5px;
+    margin-left: 12%;
+    margin-right: 13%;
+    margin-bottom: 30%;
+}
+
+#icons_reseaux { /* alignement et positionnement */
+    display: flex;
+}
+
+#reseaux {
+    display: flex;
+    margin-left: 0;
+    padding-left: 10%;
+}
+
+#skills_title {
+    margin-bottom: auto;
+    font-size: 85%;
+}
+
+/* RIGHT BLOCK
+--------------*/
+
+#right_block { /* Bloc de droite, gris clair */
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    background-color: #f7f7f7;
+}
+
+#titre_du_cv { /* Positionnement titre */
+    display: flex;
+    margin-left: 10%;
+}
+
+h1 { /* Font */
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #404040;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin-bottom: 0;
+    margin-top: 15%;
+}
+
+#prenom { /* Color prénom */
+    color: #ff6f00;
+}
+
+#sous_titre { /* Taille, positionnement */
+    font-size: auto;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #404040; 
+}
+
+#line_titre { /* Ligne graphique sous Développeuse */
+   border-bottom: 2px solid #ff6f00; 
+   padding-bottom: 6px;
+}
+
+#first_cat, #second_cat, #third_cat {
+    margin-left: 11%;
+}
+
+.titre_cat {
+    display: flex;
+    margin-right: 8%;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff6f00;
+}
+
+i { /* icons */
+    font-size: 150%;
+    color: #ff6f00;
+}
+
+.fa-dot-circle, .fa-circle {
+    font-size: 80%;
+    margin-right: 10px;
+}
+
+#information_forma_cat, #information_expro_cat {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#information_reco_cat {
+    display: flex;
+    font-size: 90%;
+}
+
+#second_reco {
+    margin-left: 22%;
+}
+
+.nom_reco {
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.fonction {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 85%;
+}
+
+.contact {
+    margin-top: 2%;
+    margin-bottom: 20%;
+    font-size: 82%;
+}
+
+.fa-graduation-cap, .fa-briefcase, .fa-pen {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.date {
+    font-size: 80%;
+}
+
+.lieu {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.periode {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.organisme {
+    margin-bottom: 0;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.nom_forma, .poste {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.resume {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 8%;
+    text-align: justify;
+}
+

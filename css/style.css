@@ -23,19 +23,17 @@
 }
 
 #photo_cv { /* Alignement de la photo */
+    display: flex;
+    justify-content: center;
     position: relative;
-    padding-top: 40px;
-    padding-left: 60px;
-    padding-bottom: 25px;
 }
 .ma_photo { /* Image CV enclavé dans un cercle */
     background-size : contain;
-    background-position : 200%; 
+    background-position : 100%; 
     display : inline-block;
     width : 140px; height : 140px;
     border: 3px solid #ff6f00;
-    border-radius: 100%;
-    
+    border-radius: 100%;  
 }
 
 .bloc_categorie { /* Police, texte, couleur, background des couleurs des catégories */
@@ -43,6 +41,7 @@
     text-transform: uppercase;
     text-align: center;
     font-family: Montserrat, sans-serif;
+    font-weight: 400;
     color: #f7f7f7; 
     padding-top: 5px;
     padding-bottom: 5px;
@@ -125,7 +124,7 @@ li { /* liste */
 }
 
 h1 { /* Font */
-    font-family: Montserrat, sans-serif;
+    font-family: 600;
     color: #404040;
     text-transform: uppercase;
     font-size: 2.5em;
@@ -142,7 +141,7 @@ h1 { /* Font */
     font-size: auto;
     margin-bottom: 30px;
     margin-top: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: 400;
     color: #404040;
     
 }
