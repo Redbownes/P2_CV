@@ -93,13 +93,13 @@ li { /* liste */
 
 .infobulle:hover::after,
 .infobulle:focus::after {
-    content: attr(aria-label);  /* on affiche aria-label */
+    content: attr(aria-label); 
     position: absolute;
     top: 2.4em;
     left: 50%;
-    transform: translateX(-50%); /* on centre horizontalement  */
-    z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
-    white-space: nowrap;  /* on interdit le retour à la ligne */
+    transform: translateX(-50%); 
+    z-index: 1; 
+    white-space: nowrap;  
 }
 
 #description { /* police, fer, couleur */
@@ -108,7 +108,7 @@ li { /* liste */
     font-size: 12.5px;
     margin-left: 12%;
     margin-right: 13%;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
 }
 
 #icons_reseaux { /* alignement et positionnement */
@@ -121,9 +121,10 @@ li { /* liste */
     padding-left: 10%;
 }
 
-#skills_title {
-    margin-bottom: auto;
-    font-size: 85%;
+.grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 45px 45px 45px 45px;
 }
 
 /* RIGHT BLOCK
@@ -173,16 +174,16 @@ h1 { /* Font */
     margin-left: 11%;
 }
 
-.titre_cat {
+.formation, .expe_pro, .reco {
     display: flex;
     margin-right: 8%;
-    padding-bottom: 0;
+    padding-bottom: 2%;
     text-transform: uppercase;
     border-bottom: 2px solid #ff6f00;
 }
 
 i { /* icons */
-    font-size: 150%;
+    font-size: 140%;
     color: #ff6f00;
 }
 
@@ -191,10 +192,13 @@ i { /* icons */
     margin-right: 10px;
 }
 
-#information_forma_cat, #information_expro_cat {
+.item {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+}
+
+.information_rbloc {
+    margin-left: 90px;
+    margin-right: 15px;
 }
 
 #information_reco_cat {
@@ -225,7 +229,7 @@ i { /* icons */
 
 .fa-graduation-cap, .fa-briefcase, .fa-pen {
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .date {
@@ -234,7 +238,6 @@ i { /* icons */
 
 .lieu {
     margin: 0;
-    margin-left: 20px;
 }
 
 .periode {
@@ -259,5 +262,6 @@ i { /* icons */
     margin-bottom: 0px;
     margin-right: 8%;
     text-align: justify;
+    font-size: 85%;
 }
 

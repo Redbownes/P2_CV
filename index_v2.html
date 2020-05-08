@@ -61,25 +61,22 @@
             </div> 
             <h3 class="bloc_categorie">à propos de moi</h3>
                 <article id="description"> 
-                    <p>Après une licence <strong class="descrip">Concepteur & Réalisateur 3D</strong>  obtenu en décembre 2019 et étant depuis quelques années <strong class="descrip">graphiste</strong>, je me tourne à présent vers les métiers du <strong class="descrip">développement web</strong> afin d’étendre mes compétences et permettre de proposer à ma clientèle un plus large éventail de proposition. </p>
+                    <p>Après une licence <strong>Concepteur & Réalisateur 3D</strong>  obtenu en décembre 2019 et étant depuis quelques années <strong>graphiste</strong>, je me tourne à présent vers les métiers du <strong>développement web</strong> afin d’étendre mes compétences et permettre de proposer à ma clientèle un plus large éventail de proposition.</p>
                 </article>
             <h3 class="bloc_categorie">compétences</h3>
-            <div id="skills_title">
-                <ul>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Indesign</li>
-                    <li>XD</li>
-                    <li>Premiere Pro</li>
-                    <li>After Effect</li>
-                    <li>Maya</li>
-                    <li>3dsMax</li>
-                    <li>Substance Painter</li>
-                    <li>Zbrush</li>
-                    <li>Unreal Engine 4</li>
-                </ul>
-            </div>
-            <div id="skills_bar">
+            <div class="grid">
+                    <div><img src="asset/icons/skill/PS.svg" alt="Photoshop" /></div>
+                    <div><img src="asset/icons/skill/AI.svg" alt="Illustrator" /></div>
+                    <div><img src="asset/icons/skill/ID.svg" alt="Indesign" /></div>
+                    <div><img src="asset/icons/skill/XD.svg" alt="XD" /></div>
+                    <div><img src="asset/icons/skill/PR.svg" alt="Premiere Pro" /></div>
+                    <div><img src="asset/icons/skill/AE.svg" alt="After Effect" /></div>
+                    <div><img src="asset/icons/skill/MAYA.svg" alt="Maya" /></div>
+                    <div><img src="asset/icons/skill/3DS.svg" alt="3dsMax" /></div>
+                    <div><img src="asset/icons/skill/SBP.svg" alt="Substance Painter" /></div>
+                    <div><img src="asset/icons/skill/ZBRUSH.svg" alt="Zbrush" /></div>
+                    <div><img src="asset/icons/skill/UNREAL.svg" alt="Unreal Engine 4" /></div>
+                    <div><img src="asset/icons/skill/TOPO.svg" alt="Topogun" /></div>
             </div>
             <h3 class="bloc_categorie">centres d'intérêts</h3>
             <ul id="icons_loisirs">
@@ -111,11 +108,8 @@
                 </header>   
             </section>
             <section id="first_cat">
-                <div class="titre_cat">
-                    <p><i class="fas fa-graduation-cap"></i></p>
-                    <h3 class="formation">Formation</h3>
-                </div>
-                <article id="information_forma_cat">
+                <h3 class="formation"><i class="fas fa-graduation-cap"></i>Formations</h3>
+                <article class="item">
                     <div class="date">
                         <p class="periode"><i class="far fa-dot-circle"></i>Mars - Septembre 2020</p>
                         <p class="lieu">Bordeaux (Distant)</p>
@@ -125,6 +119,8 @@
                         <h5 class="nom_forma">Junior Web Developer</h5>
                         <p class="resume">Formation de six mois pour appréhender et obtenir les bases du métier de développeur web à travers divers projets sur une période de 6 mois.</p>
                     </div>
+                </article>
+                <article class="item">
                     <div class="date">
                         <p class="periode"><i class="fas fa-circle"></i>2016 - 2020</p>
                         <p class="lieu">Bordeaux</p>
@@ -137,10 +133,8 @@
                 </article>
             </section>
             <section id="second_cat">
-                <div class="titre_cat">
-                    <p><i class="fas fa-briefcase"></i></p>
-                    <h3 class="formation">Expérience Professionnelle</h3></div>
-                <article id="information_expro_cat">
+                <h3 class="expe_pro"><i class="fas fa-briefcase"></i>Expérience Professionnelle</h3>
+                <article class="item">
                     <div class="date">
                         <p class="periode"><i class="far fa-dot-circle"></i>2016 - 2020</p>
                         <p class="lieu">Bordeaux (et région)</p>
@@ -150,6 +144,8 @@
                         <h5 class="poste">Graphic Designer</h5>
                         <p class="resume">Réalisation de support de communication visuelle, d’illustration et d’élément de mise en scène ; Conseil graphique & marketing ; Gestion de projet entre les différents corps de métier.</p>
                     </div>
+                </article>
+                <article class="item"> 
                     <div class="date">
                         <p class="periode"><i class="fas fa-circle"></i>Octobre - Novembre 2019</p>
                         <p class="lieu">Rennes</p>
@@ -162,23 +158,20 @@
                 </article>
             </section>
             <section id="third_cat">
-                <div class="titre_cat">
-                    <p><i class="fas fa-pen"></i></p>
-                    <h3 class="formation">Recommandations</h3>
-                </div>
+                <h3 class="reco"><i class="fas fa-pen"></i>Recommandations</h3>
                 <div id="information_reco_cat">
-                    <aside id="first_reco">
+                    <article id="first_reco">
                         <h4 class="nom_reco">Mariah Esperanza</h4>
                         <h5 class="fonction">Art Director</h5>
                         <p class="contact">Téléphone : +33 658 522 208
                         <br>E-mail : ma.esperanza@gmail.com</p>
-                    </aside>
-                    <aside id="second_reco">
+                    </article>
+                    <article id="second_reco">
                         <h4 class="nom_reco">Adrien Peton</h4>
                         <h5 class="fonction">3D Artist</h5>
                         <p class="contact">Téléphone : +33 678 223 542
                         <br>E-mail : peton.adrien@gmail.com</p>
-                    </aside>
+                    </article>
                 </div>
             </section>
         </div>
