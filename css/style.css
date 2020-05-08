@@ -198,6 +198,7 @@ i { /* icons */
 
 .information_rbloc {
     margin-right: 15px;
+    width: 1002px;
 }
 
 #information_reco_cat {
@@ -250,6 +251,7 @@ i { /* icons */
 .organisme {
     margin-bottom: 0;
     margin-top: 15px;
+    margin-right: 25px;
     text-transform: uppercase;
     font-weight: 400;
 }
