@@ -1,4 +1,4 @@
-#bloc_page { /* Gestion de la page entière */
+.bloc_page { /* Gestion de la page entière */
     width: 900px; 
     margin: auto;
     display: flex;
@@ -9,7 +9,7 @@
 /* LEFT BLOC
 ------------*/
 
-#left_block { /* Bloc de gauche, gris foncé */
+.left_block { /* Bloc de gauche, gris foncé */
     flex-direction: column;
     justify-content: center;
     width: 30%;
@@ -53,13 +53,13 @@ li { /* liste */
     color: #f7f7f7;
 }
 
-#icons_loisirs { /* alignement et positionnement */
+.icons_loisirs { /* alignement et positionnement */
     display: flex;
     justify-content: center;
     padding: 0;
 }
 
-#contact { /* Police, texte, couleur, espacement */
+.contact { /* Police, texte, couleur, espacement */
     display: flex;
     flex-direction: column;
     color: #f7f7f7;
@@ -102,7 +102,7 @@ li { /* liste */
     white-space: nowrap;  
 }
 
-#description { /* police, fer, couleur */
+.description { /* police, fer, couleur */
     color: #f7f7f7;
     text-align: justify;
     font-size: 12.5px;
@@ -111,11 +111,11 @@ li { /* liste */
     margin-bottom: 10%;
 }
 
-#icons_reseaux { /* alignement et positionnement */
+.icons_reseaux { /* alignement et positionnement */
     display: flex;
 }
 
-#reseaux {
+.reseaux {
     display: flex;
     margin-left: 0;
     padding-left: 10%;
@@ -130,14 +130,14 @@ li { /* liste */
 /* RIGHT BLOCK
 --------------*/
 
-#right_block { /* Bloc de droite, gris clair */
+.right_block { /* Bloc de droite, gris clair */
     flex-direction: column;
     width: 70%;
     height: auto;
     background-color: #f7f7f7;
 }
 
-#titre_du_cv { /* Positionnement titre */
+.titre_du_cv { /* Positionnement titre */
     display: flex;
     margin-left: 7%;
 }
@@ -152,11 +152,11 @@ h1 { /* Font */
     margin-top: 15%;
 }
 
-#prenom { /* Color prénom */
+.prenom { /* Color prénom */
     color: #ff6f00;
 }
 
-#sous_titre { /* Taille, positionnement */
+.sous_titre { /* Taille, positionnement */
     font-size: auto;
     margin-bottom: 30px;
     margin-top: 0;
@@ -165,12 +165,12 @@ h1 { /* Font */
     color: #404040; 
 }
 
-#line_titre { /* Ligne graphique sous Développeuse */
+.line_titre { /* Ligne graphique sous Développeuse */
    border-bottom: 2px solid #ff6f00; 
    padding-bottom: 6px;
 }
 
-#first_cat, #second_cat, #third_cat {
+.first_cat, .second_cat, .third_cat {
     margin-left: 7%;
 }
 
@@ -201,12 +201,12 @@ i { /* icons */
     width: 1002px;
 }
 
-#information_reco_cat {
+.information_reco_cat {
     display: flex;
     font-size: 90%;
 }
 
-#second_reco {
+.second_reco {
     margin-left: 22%;
 }
 
@@ -215,13 +215,13 @@ i { /* icons */
     margin-bottom: 2px;
 }
 
-.fonction {
+.fonction_reco {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 85%;
 }
 
-.contact {
+.contact_reco {
     margin-top: 2%;
     margin-bottom: 20%;
     font-size: 82%;
