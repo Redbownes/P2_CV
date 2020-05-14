@@ -4,6 +4,7 @@
     display: flex;
     font-family: Montserrat, sans-serif;
     font-weight: 300;
+    color: #404040;
 }
 
 /* LEFT BLOC
@@ -29,11 +30,11 @@
     padding-bottom: 5px;
 }
 
-figure{
+figure{ /* Placement de la photo et marges */
     text-align:center;
     margin:30px 0px 30px 0px;
 }
-.ma_photo {
+.ma_photo { /* Photo avec bordures arrondies orange */
     border: 3px solid #ff6f00;
     border-radius: 50%;
     max-width: 170px;
@@ -44,11 +45,11 @@ li { /* liste */
     margin-right: 10px;
 }
 
-.fas {
+.fas { /* Icons loisirs */
     font-size: 125%;
 }
 
-.fab {
+.fab { /* Icons réseaux sociaux */
     font-size: 150%;
     color: #f7f7f7;
 }
@@ -70,29 +71,49 @@ li { /* liste */
 
 }
 
-.contact_infos {
+.contact_infos { /* Réponse contact */
     margin-top: 2px;
 }
 
-.contact_intitule {
+.contact_intitule { /* Intitulé contact */
     font-weight: 600;
     text-decoration: underline;
     margin: 0;
 }
 
-.email, .monsite {
+.email, .monsite { /* Couleur des liens, décoration */
     color: #f7f7f7;
     text-decoration: none;
 
 }
 
-.infobulle {
-    position: relative;  /* les .infobulle deviennent référents */
+
+
+.description { /* Police, Fer, Couleur de la zone description */
+    color: #f7f7f7;
+    text-align: justify;
+    font-size: 12.5px;
+    margin-left: 12%;
+    margin-right: 13%;
+    margin-bottom: 10%;
+}
+
+.reseaux { /* Gestion du bloc des réseaux sociaux */
+    display: flex;
+    margin-left: 0;
+    padding-left: 10%;
+}
+
+.icons_reseaux { /* Alignement et positionnement */
+    display: flex;
+}
+
+.infobulle { /* Infobulle pour l'icône Discord */
+    position: relative;  
     cursor: help;
 }
 
-.infobulle:hover::after,
-.infobulle:focus::after {
+.infobulle:focus::after { /* Positionnement de l'infobulle */
     content: attr(aria-label); 
     position: absolute;
     top: 2.4em;
@@ -102,26 +123,7 @@ li { /* liste */
     white-space: nowrap;  
 }
 
-.description { /* police, fer, couleur */
-    color: #f7f7f7;
-    text-align: justify;
-    font-size: 12.5px;
-    margin-left: 12%;
-    margin-right: 13%;
-    margin-bottom: 10%;
-}
-
-.icons_reseaux { /* alignement et positionnement */
-    display: flex;
-}
-
-.reseaux {
-    display: flex;
-    margin-left: 0;
-    padding-left: 10%;
-}
-
-.grid {
+.grid { /* Zone compétence avec l'utilisation du CSS grid pour l'alignement */
     display: grid;
     justify-content: center;
     grid-template-columns: 45px 45px 45px 45px;
@@ -142,7 +144,7 @@ li { /* liste */
     margin-left: 7%;
 }
 
-h1 { /* Font */
+h1 { /* Propriété du titre principal */
     font-family: Montserrat;
     font-weight: 600;
     color: #404040;
@@ -152,7 +154,7 @@ h1 { /* Font */
     margin-top: 15%;
 }
 
-.prenom { /* Color prénom */
+.prenom { /* Couleur du prénom uniquement */
     color: #ff6f00;
 }
 
@@ -165,16 +167,16 @@ h1 { /* Font */
     color: #404040; 
 }
 
-.line_titre { /* Ligne graphique sous Développeuse */
+.line_titre { /* Ligne graphique sous une partie de "Développeuse" */
    border-bottom: 2px solid #ff6f00; 
    padding-bottom: 6px;
 }
 
-.first_cat, .second_cat, .third_cat {
+.first_cat, .second_cat, .third_cat { /* Marges des blocs catégories */
     margin-left: 7%;
 }
 
-.formation, .expe_pro, .reco {
+.formation, .expe_pro, .reco { /* Marges, Transformation du texte en Cap, Bordure orange */
     display: flex;
     margin-right: 6%;
     padding-bottom: 2%;
@@ -182,73 +184,47 @@ h1 { /* Font */
     border-bottom: 2px solid #ff6f00;
 }
 
-i { /* icons */
+i { /* Taille et couleur des icons titres */
     font-size: 140%;
     color: #ff6f00;
 }
 
-.fa-dot-circle, .fa-circle {
-    font-size: 80%;
-    margin-right: 10px;
-}
-
-.item {
-    display: flex;
-}
-
-.information_rbloc {
-    margin-right: 15px;
-    width: 1002px;
-}
-
-.information_reco_cat {
-    display: flex;
-    font-size: 90%;
-}
-
-.second_reco {
-    margin-left: 22%;
-}
-
-.nom_reco {
-    text-transform: uppercase;
-    margin-bottom: 2px;
-}
-
-.fonction_reco {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 85%;
-}
-
-.contact_reco {
-    margin-top: 2%;
-    margin-bottom: 20%;
-    font-size: 82%;
-}
-
-.fa-graduation-cap, .fa-briefcase, .fa-pen {
+.fa-graduation-cap, .fa-briefcase, .fa-pen { /* Marges et tailles des icons titres */
     margin-right: 15px;
     font-size: 20px;
 }
 
-.date {
+.fa-dot-circle, .fa-circle { /* Taille et marges des ancres des Dates */
+    font-size: 80%;
+    margin-right: 10px;
+}
+
+.item { /* Gestion des blocs informations */
+    display: flex;
+}
+
+.information_rbloc { /* Marges et taille des blocs infos */
+    margin-right: 15px;
+    width: 1002px;
+}
+
+.date { /* Tailles de font, marges et taille des blocs date */
     font-size: 80%;
     width: 600px;
     margin-right: 20px;
 }
 
-.lieu {
+.lieu { /* Décalage unique pour les lieux */
     margin: 0;
     margin-left: 20px;
 }
 
-.periode {
+.periode { /* Marges pour le bloc période, gestion des espacements */
     margin-top: 15px;
     margin-bottom: 2px;
 }
 
-.organisme {
+.organisme { /* Marges, Graisse, Transformation en Cap */
     margin-bottom: 0;
     margin-top: 15px;
     margin-right: 25px;
@@ -256,12 +232,12 @@ i { /* icons */
     font-weight: 400;
 }
 
-.nom_forma, .poste {
+.nom_forma, .poste { /* Marges pour les sous titres de Organismes */
     margin: 0;
     margin-top: 10px;
 }
 
-.resume {
+.resume { /* Gestion du texte descriptif */
     margin-top: 10px;
     margin-bottom: 0px;
     margin-right: 8%;
@@ -269,3 +245,33 @@ i { /* icons */
     font-size: 85%;
 }
 
+.information_reco_cat { /* Gestion du bloc information recommandation */
+    display: flex;
+    font-size: 90%;
+}
+
+.second_reco { /* Espacement de la seconde recommandation par rapport à la première */
+    margin-left: 22%;
+}
+
+.nom_reco { /* Transformation en Cap et marge basse des titres des reco */
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.fonction_reco { /* Marges et Taille de police de la fonction de la reco */
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 85%;
+}
+
+.contact_reco { /* Marges et Taille de police des moyens de contact de la reco */
+    margin-top: 2%;
+    margin-bottom: 20%;
+    font-size: 82%;
+}
+
+@media screen and (max-width: 900px)
+{
+    
+}
