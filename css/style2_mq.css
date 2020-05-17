@@ -273,10 +273,11 @@
 }
 
 /* Règles pour gestion mobile & tablette >900px */
-@media screen and (max-device-width: 900px) {
+@media screen and (max-width: 900px) {
     .bloc_page { /* Gestion de la page entière */
         width: auto; 
         margin: auto;
+        display: block;
         font-family: Montserrat, sans-serif;
         font-weight: 300;
         color: #404040;
