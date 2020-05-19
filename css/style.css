@@ -1,5 +1,5 @@
 /* Règles pour gestion normale et au delà*/
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 900px) {
     .bloc_page { /* Gestion de la page entière */
         width: 900px; 
         margin: auto;
