@@ -1,5 +1,5 @@
 /* Règles pour gestion normale et au delà*/
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
     .bloc_page { /* Gestion de la page entière */
         width: 900px; 
         margin: auto;
@@ -273,9 +273,12 @@
 }
 
 /* Règles pour gestion mobile & tablette >900px */
-@media screen and (max-device-width: 900px) {
+@media screen and (max-width: 900px) {
     .bloc_page { /* Gestion de la page entière */
-        width: auto; 
+        width: auto;
+        zoom: 1; 
+        display: flex;
+        flex-direction: column;
         margin: auto;
         font-family: Montserrat, sans-serif;
         font-weight: 300;
@@ -287,7 +290,7 @@
     
     .left_block { /* Bloc de gauche, gris foncé */
         justify-content: center;
-        width: auto;
+        width: 400px;
         background-color: #212121;
         color: #f7f7f7;
         padding-bottom: 30px;
@@ -302,6 +305,7 @@
         color: #f7f7f7; 
         padding-top: 5px;
         padding-bottom: 5px;
+        margin-bottom: 3px;
     }
     
     figure{ /* Placement de la photo et marges */
@@ -321,7 +325,7 @@
     }
     
     .fas { /* Icons loisirs */
-        font-size: 125%;
+        font-size: 150%;
     }
     
     .fab { /* Icons réseaux sociaux */
@@ -332,6 +336,7 @@
     .icons_loisirs { /* alignement et positionnement */
         display: flex;
         justify-content: center;
+        margin-top: 6%;
         padding: 0;
     }
     
@@ -339,11 +344,10 @@
         display: flex;
         flex-direction: column;
         color: #f7f7f7;
-        font-size: 12px;
+        font-size: 15px;
         margin-left: 12%;
-        margin-top: 10%;
+        margin-top: 5%;
         padding: 0;
-    
     }
     
     .contact_infos { /* Réponse contact */
@@ -362,15 +366,14 @@
     
     }
     
-    
-    
     .description { /* Police, Fer, Couleur de la zone description */
         color: #f7f7f7;
         text-align: justify;
-        font-size: 12.5px;
-        margin-left: 12%;
-        margin-right: 13%;
+        font-size: 15px;
+        margin-left: 15%;
+        margin-right: 15%;
         margin-bottom: 10%;
+        margin-top: 9%;
     }
     
     .reseaux { /* Gestion du bloc des réseaux sociaux */
@@ -401,6 +404,7 @@
     .grid { /* Zone compétence avec l'utilisation du CSS grid pour l'alignement */
         display: grid;
         justify-content: center;
+        margin-top: 6%;
         grid-template-columns: 45px 45px 45px 45px;
     }
     
@@ -408,9 +412,9 @@
     --------------*/
     
     .right_block { /* Bloc de droite, gris clair */
-        width: auto;
+        width: 400px;
         background-color: #f7f7f7;
-        height: 1390px;
+        height: 1480px;
     }
     
     .titre_du_cv { /* Positionnement titre */
@@ -470,6 +474,11 @@
         font-size: 80%;
         margin-right: 10px;
     }
+
+    .item { /* Gestion des blocs informations */
+        display: flex;
+        flex-direction: column;
+    }
     
     .information_rbloc { /* Marges et taille des blocs infos */
         margin-right: 15px;
@@ -497,6 +506,7 @@
         margin-right: 25px;
         text-transform: uppercase;
         font-weight: 400;
+        width: 300px;
     }
     
     .nom_forma, .poste { /* Marges pour les sous titres de Organismes */
@@ -510,20 +520,25 @@
         margin-right: 8%;
         text-align: justify;
         font-size: 85%;
+        width: 300px;
     }
     
     .information_reco_cat { /* Gestion du bloc information recommandation */
+        display: flex;
+        flex-direction: column;
         font-size: 90%;
     }
     
     .second_reco { /* Espacement de la seconde recommandation par rapport à la première */
         margin-bottom: 4%;
+        margin-left: 0;
     }
 
     .nom_reco { /* Transformation en Cap et marge basse des titres des reco */
         text-transform: uppercase;
         margin-bottom: 2px;
         margin-left: 20px;
+        margin-top: 5px;
     }
     
     .fonction_reco { /* Marges et Taille de police de la fonction de la reco */
@@ -534,7 +549,7 @@
     }
     
     .contact_reco { /* Marges et Taille de police des moyens de contact de la reco */
-        margin-top: 2%;
+        margin-top: 1%;
         margin-bottom: 5%;
         margin-left: 20px;
         font-size: 82%;
