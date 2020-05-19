@@ -1,7 +1,7 @@
 /* Règles pour gestion normale et au delà*/
 @media screen and (min-width: 900px) {
     .bloc_page { /* Gestion de la page entière */
-        width: 900px; 
+        width: 50%; 
         margin: auto;
         display: flex;
         font-family: Montserrat, sans-serif;
@@ -275,11 +275,10 @@
 /* Règles pour gestion mobile & tablette >900px */
 @media screen and (max-width: 900px) {
     .bloc_page { /* Gestion de la page entière */
-        width: auto;
+        width: 50%;
         zoom: 1; 
         display: flex;
         flex-direction: column;
-        margin: auto;
         font-family: Montserrat, sans-serif;
         font-weight: 300;
         color: #404040;
@@ -290,7 +289,8 @@
     
     .left_block { /* Bloc de gauche, gris foncé */
         justify-content: center;
-        width: 400px;
+        width: 200%;
+        margin: auto;
         background-color: #212121;
         color: #f7f7f7;
         padding-bottom: 30px;
@@ -412,7 +412,8 @@
     --------------*/
     
     .right_block { /* Bloc de droite, gris clair */
-        width: 400px;
+        width: 200%;
+        margin: auto;
         background-color: #f7f7f7;
         height: 1480px;
     }
