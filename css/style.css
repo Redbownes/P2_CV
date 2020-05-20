@@ -34,7 +34,7 @@
 
     figure{ /* Placement de la photo et marges */
         text-align:center;
-        margin:30px 0px 30px 0px;
+        margin:40px 0px 40px 0px;
     }
     .ma_photo { /* Photo avec bordures arrondies orange */
         border: 3px solid #ff6f00;
@@ -45,10 +45,7 @@
     li { /* liste */
         list-style-type: none;
         margin-right: 10px;
-    }
-
-    .fas { /* Icons loisirs */
-        font-size: 125%;
+        margin-bottom: 8px;
     }
 
     .fab { /* Icons réseaux sociaux */
@@ -56,10 +53,25 @@
         color: #f7f7f7;
     }
 
+    .fas { /* Icons loisirs */
+        font-size: 125%;
+    }
+
+    .bloc_icons_loisirs {
+        padding: 8px;
+        border: 2px solid #ff6f00;
+        border-radius: 50%;
+        width: 9%;
+        text-align: center;
+    }
+
     .icons_loisirs { /* alignement et positionnement */
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         padding: 0;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .contact { /* Police, texte, couleur, espacement */
@@ -89,8 +101,6 @@
 
     }
 
-
-
     .description { /* Police, Fer, Couleur de la zone description */
         color: #f7f7f7;
         text-align: justify;
@@ -115,6 +125,7 @@
         cursor: help;
     }
 
+    .infobulle:hover::after,
     .infobulle:focus::after { /* Positionnement de l'infobulle */
         content: attr(aria-label); 
         position: absolute;
@@ -310,13 +321,12 @@
     
     figure{ /* Placement de la photo et marges */
         text-align:center;
-        margin:0px 0px 30px 0px;
+        margin:45px 0px 45px 0px;
     }
     .ma_photo { /* Photo avec bordures arrondies orange */
         border: 3px solid #ff6f00;
         border-radius: 50%;
         max-width: 170px;
-        margin-top: 30px;
     }
     
     li { /* liste */
@@ -325,7 +335,19 @@
     }
     
     .fas { /* Icons loisirs */
-        font-size: 150%;
+        font-size: 125%;
+    }
+
+
+    .bloc_icons_loisirs {
+        padding: 8px;
+        border: 2px solid #ff6f00;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     
     .fab { /* Icons réseaux sociaux */
@@ -336,8 +358,11 @@
     .icons_loisirs { /* alignement et positionnement */
         display: flex;
         justify-content: center;
-        margin-top: 6%;
+        text-align: center;
+        margin-top: 35px;
         padding: 0;
+        margin-left: 2%;
+
     }
     
     .contact { /* Police, texte, couleur, espacement */
@@ -391,10 +416,11 @@
         cursor: help;
     }
     
+    .infobulle:hover::after, /* Affichage de l'infobulle */
     .infobulle:focus::after { /* Positionnement de l'infobulle */
         content: attr(aria-label); 
         position: absolute;
-        top: 2.4em;
+        top: 1.8em;
         left: 50%;
         transform: translateX(-50%); 
         z-index: 1; 
@@ -518,10 +544,10 @@
     .resume { /* Gestion du texte descriptif */
         margin-top: 10px;
         margin-bottom: 0px;
-        margin-right: 8%;
+        margin-right: 6%;
         text-align: justify;
         font-size: 85%;
-        width: 300px;
+        width: 95%;
     }
     
     .information_reco_cat { /* Gestion du bloc information recommandation */
