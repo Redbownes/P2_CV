@@ -82,7 +82,6 @@
         margin-left: 12%;
         margin-top: 10%;
         padding: 0;
-
     }
 
     .contact_infos { /* Réponse contact */
@@ -98,7 +97,6 @@
     .email, .monsite { /* Couleur des liens, décoration */
         color: #f7f7f7;
         text-decoration: none;
-
     }
 
     .description { /* Police, Fer, Couleur de la zone description */
@@ -338,8 +336,7 @@
         font-size: 125%;
     }
 
-
-    .bloc_icons_loisirs {
+    .bloc_icons_loisirs { /* Cerclage border */
         padding: 8px;
         border: 2px solid #ff6f00;
         border-radius: 50%;
@@ -362,7 +359,6 @@
         margin-top: 35px;
         padding: 0;
         margin-left: 2%;
-
     }
     
     .contact { /* Police, texte, couleur, espacement */
@@ -473,7 +469,7 @@
     .line_titre { /* Ligne graphique sous une partie de "Développeuse" */
         border-bottom: 2px solid #ff6f00; 
         padding-bottom: 6px;
-     }
+    }
     
     .first_cat, .second_cat, .third_cat { /* Marges des blocs catégories */
         margin-left: 7%;
